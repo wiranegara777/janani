@@ -1,0 +1,31 @@
+<h1> Products List </h1>
+
+<%= link_to 'New product', new_product_path %>
+<a href = "/products/new"> new </a>
+<table>
+  <tr>
+    <th> Product Name </th>
+    <th> Status </th>
+    <th colspan="2"> Action </th>
+  </tr>
+
+  <% @products.each do |product| %>
+   <tr>
+    <td><a href="products/<%= product.id %>"><%= product.name %></a></td>
+    <td>
+    <%=
+       if product.status == "true"
+          "active"
+       else
+          "maintenace"
+       end
+     %>
+   </td>
+   <td><%= link_to 'Edit', edit_product_path(product) %></td>
+   <td><%= link_to 'Delete', product_path(product),
+             method: :delete,
+             data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <% end %>
+
+</table>

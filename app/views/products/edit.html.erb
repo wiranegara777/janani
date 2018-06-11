@@ -1,0 +1,61 @@
+<h1> New Products </h1>
+
+<%= form_with model: @product,  local: true do |form| %>
+
+<% if @product.errors.any? %>
+   <div id="error_explanation">
+     <h2>
+       <%= pluralize(@product.errors.count, "error") %> prohibited
+       this article from being saved:
+     </h2>
+     <ul>
+       <% @product.errors.full_messages.each do |msg| %>
+         <li><%= msg %></li>
+       <% end %>
+     </ul>
+   </div>
+ <% end %>
+
+  <p>
+    <%= form.label :Product_Name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :Product_Description %><br>
+    <%= form.text_area :description %>
+  </p>
+
+  <p>
+    <%= form.label :Jira_link %><br>
+    <%= form.text_field :jira %>
+  </p>
+
+  <p>
+    <%= form.label :Gitlab_link %><br>
+    <%= form.text_field :gitlab %>
+  </p>
+
+  <div class="field">
+   <%= form.label :Status %><br />
+   <% if @product.status == "true" %>
+        <%= form.label :active, "active", :value => "active"  %>
+        <%= form.radio_button :status, true, :checked => true %>
+        <%= form.label :maintenace, "maintenace", :value => "maintenance" %>
+        <%= form.radio_button :status, false %>
+  <% else %>
+        <%= form.label :active, "active", :value => "active"  %>
+        <%= form.radio_button :status, true %>
+        <%= form.label :maintenace, "maintenace", :value => "maintenance" %>
+        <%= form.radio_button :status, false, :checked => true %>
+  <% end %>
+ </div>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<%= link_to 'back',products_path %>
+<!-- <a href="/products">bbback </a> -->
+
+<% end %>
