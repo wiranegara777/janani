@@ -13,4 +13,14 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require jquery3
+//= require popper
+//= require bootstrap
+//= require_self
+//= require js/fitvids.js
+//= require js/init.js
+//= require js/modernizr.js
+//= require js/nav.js
+//= require js/overlay.js
+//= require js/progress.js
+//= require js/tanjidor.js

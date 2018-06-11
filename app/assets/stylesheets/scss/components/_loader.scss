@@ -1,0 +1,172 @@
+.tjr-loader {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 4px;
+  &:before {
+    content: "";
+    background: asset-url("#{$path__images}/loader/loader--shaded--64.gif") no-repeat center center;
+    background-size: 32px 32px;
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+  }
+}
+// By Size
+.tjr-loader--8 {
+  &:before {
+    content: "";
+    background: asset-url("#{$path__images}/loader/loader--shaded--16.gif") no-repeat center center;
+    background-size: 8px 8px;
+    width: 8px;
+    height: 8px;
+  }
+  &.tjr-loader--blue {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--shaded--16.gif") no-repeat center center;
+      background-size: 8px 8px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &.tjr-loader--white {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--white--16.gif") no-repeat center center;
+      background-size: 8px 8px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+.tjr-loader--16 {
+  &:before {
+    content: "";
+    background: asset-url("#{$path__images}/loader/loader--shaded--32.gif") no-repeat center center;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+  }
+  &.tjr-loader--blue {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--shaded--32.gif") no-repeat center center;
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.tjr-loader--white {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--white--32.gif") no-repeat center center;
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.tjr-loader--32 {
+  &:before {
+    content: "";
+    background: asset-url("#{$path__images}/loader/loader--shaded--64.gif") no-repeat center center;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+  }
+  &.tjr-loader--blue {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--shaded--64.gif") no-repeat center center;
+      background-size: 32px 32px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &.tjr-loader--white {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--white--64.gif") no-repeat center center;
+      background-size: 32px 32px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+// By Color
+.tjr-loader--blue {
+  &:before {
+    content: "";
+    background: asset-url("#{$path__images}/loader/loader--shaded--64.gif") no-repeat center center;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+  }
+  &.tjr-loader--8 {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--shaded--16.gif") no-repeat center center;
+      background-size: 8px 8px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &.tjr-loader--16 {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--shaded--32.gif") no-repeat center center;
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.tjr-loader--32 {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--shaded--64.gif") no-repeat center center;
+      background-size: 32px 32px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+.tjr-loader--white {
+  &:before {
+    content: "";
+    background: asset-url("#{$path__images}/loader/loader--white--64.gif") no-repeat center center;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+  }
+  &.tjr-loader--8 {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--white--16.gif") no-repeat center center;
+      background-size: 8px 8px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &.tjr-loader--16 {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--white--32.gif") no-repeat center center;
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &.tjr-loader--32 {
+    &:before {
+      content: "";
+      background: asset-url("#{$path__images}/loader/loader--white--64.gif") no-repeat center center;
+      background-size: 32px 32px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

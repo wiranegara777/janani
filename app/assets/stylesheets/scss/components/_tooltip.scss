@@ -1,0 +1,70 @@
+// Trigger Element
+
+// .tjr-tooltip--active {}
+// // Target Element
+// .tjr-tooltip {
+//   position: absolute;
+//   display: none;
+//   width: auto;
+//   max-width: 120px;
+//   padding: 4px 8px;
+//   border-radius: $border-radius;
+//   text-align: center;
+//   font-size: 0.875rem;
+//   color: $color-neutral-primary;
+//   background: $color-neutral-ash;
+//   box-shadow: 0 0 4px 0 rgba($color-black, .2);
+//
+//   &:before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     z-index: 9;
+//     width: 16px;
+//     height: 16px;
+//     top: calc(100% + -2px);
+//     left: 50%;
+//     background: $color-neutral-ash;
+//     box-shadow: 2px 2px 2px 0 rgba($color-black, .1);
+//     transform: rotate(45deg) translate(-50%, 0);
+//   }
+//
+//   &.tjr-active {
+//     display: block;
+//     display: block;
+//   }
+// }
+//
+// .tjr-tooltip__text {
+//   position: relative;
+//   z-index: 10;
+// }
+// // By placement
+//
+// .tjr-tooltip--top {
+//   .tjr-tooltip__arrow {}
+// }
+//
+// .tjr-tooltip--right {
+//   .tjr-tooltip__arrow {}
+// }
+//
+// .tjr-tooltip--bottom {
+//   .tjr-tooltip__arrow {}
+// }
+//
+// .tjr-tooltip--left {
+//   .tjr-tooltip__arrow {}
+// }
+// new tooltip
+
+.tjr-tooltip {
+  display: inline-block;
+  background:rgba($color-black, .8);
+  color: $color-white;
+  position: absolute;
+  text-align: center;
+  padding:.5rem;
+  font-size: .75rem;
+  border-radius: 4px;
+}

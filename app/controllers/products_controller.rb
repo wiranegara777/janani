@@ -5,27 +5,50 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+
+    @product = Product.new
   end
 
   def create
     #render plain: params[:product].inspect
     @product = Product.new(product_params) #get product param from form
 
-    if @product.save
-      redirect_to @product
-    else
-      render 'new'
+    respond_to do |format|
+      if @product.save
+        format.json { head :no_content }
+        format.js
+      else
+        return render 'new' if @product.errors.present?
+        #format.html { render action: "new" }
+        #format.json { render json: @article.errors.full_messages,status: :unprocessable_entity }
+      end
     end
+
+    # if @product.save
+    #   redirect_to @product
+    # else
+    #   render 'new'
+    # end
+
   end
 
   def update
     @product = Product.find(params[:id])
-
-    if @product.update(product_params)
-      redirect_to @product
-    else
-      render 'edit'
+    respond_to do |format|
+      if @product.update(product_params)
+        format.json { head :no_content }
+        format.js
+      else
+        return render 'edit' if @product.errors.present?
+        #format.html { render action: "new" }
+        #format.json { render json: @article.errors.full_messages,status: :unprocessable_entity }
+      end
     end
+    # if @product.update(product_params)
+    #   redirect_to @product
+    # else
+    #   render 'edit'
+    # end
   end
 
   def product_params

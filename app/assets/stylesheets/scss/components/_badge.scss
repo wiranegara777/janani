@@ -1,0 +1,12 @@
+.tjr-badge {
+  display: inline-block;
+  position: relative;
+  padding: 1px 4px 2px;
+  background: $color-neutral-ash;
+  color: $color-midtrans-primary-dark;
+  text-align: center;
+  line-height: 1;
+  vertical-align: -1px;
+  border-radius: $border-radius;
+  max-width: 32px;
+}

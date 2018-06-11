@@ -1,0 +1,349 @@
+.tjr-text--right {
+  text-align: right;
+}
+
+.tjr-text--center {
+  text-align: center;
+}
+
+.tjr-text--left {
+  text-align: left;
+}
+
+.tjr-text--bold {
+  font-weight: 700;
+}
+.tjr-text--regular {
+  font-weight: 400!important;
+}
+
+.tjr-text--break{
+  word-wrap: break-word;
+}
+.tjr-text--tiny {
+  font-size: 0.675rem;
+}
+.tjr-text--small, small {
+  font-size: 0.875rem;
+}
+p.tjr-text--small, p small {
+  font-size: 0.75rem;
+}
+
+.tjr-text--mute {
+  color: $color-neutral-secondary!important;
+}
+.tjr-text--primary {
+  color: $color-midtrans-primary!important;
+  &:hover, &:active {
+    color: $color-midtrans-primary-dark!important;
+  }
+  &:focus {
+    border-bottom: 1px dotted $color-midtrans-primary;
+  }
+}
+.tjr-text--midtrans {
+  color: $color-midtrans-ocean!important;
+  &:hover, &:active {
+    color: $color-midtrans-aqua!important;
+  }
+  &:focus {
+    border-bottom: 1px dotted $color-midtrans-ocean;
+  }
+}
+
+.tjr-text--negative {
+  color: $color-utility-negative!important;
+}
+.tjr-text--positive {
+  color: $color-utility-positive!important;
+}
+.tjr-text--caution {
+  color: $color-utility-caution!important;
+}
+
+.tjr-float--left {
+  float: left;
+}
+.tjr-float--right {
+  float: right;
+}
+.tjr-float--none {
+  float: none;
+}
+.tjr-float--both {
+  float: both;
+}
+
+.tjr-display--block {
+  display: block;
+}
+.tjr-display--inline-block {
+  display: inline-block;
+}
+.tjr-display--inline {
+  display: inline;
+}
+.tjr-display--none {
+  display: none;
+}
+
+.tjr-center--horizontal {
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+}
+.tjr-center--vertical {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tjr-center--all {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  margin: 0 auto;
+}
+
+.tjr-valid {
+  color: $color-utility-positive !important;
+}
+.tjr-error {
+  color: $color-utility-negative !important;
+}
+.tjr-warning {
+    color: $color-utility-caution !important;
+}
+.tjr-information {
+    color: $color-utility-neutral !important;
+}
+
+.tjr-scroll--y {
+  overflow-y: scroll;
+}
+.tjr-scroll--x {
+  overflow-x: scroll;
+}
+.tjr-scroll--both {
+  overflow: scroll;
+}
+.tjr-scroll--auto {
+  overflow: auto;
+}
+.tjr-scroll--none {
+  overflow: hidden;
+}
+
+.tjr-margin--none{
+  margin:0 !important;
+}
+.tjr-margin--small{
+  margin:.5rem !important;
+}
+.tjr-margin--normal{
+  margin:1rem !important;
+}
+.tjr-margin--large{
+  margin:2rem !important;
+}
+
+.tjr-margin--top--none{
+  margin-top: 0 !important;
+}
+.tjr-margin--top--small{
+  margin-top: .5rem !important;
+}
+.tjr-margin--top--normal{
+  margin-top: 1rem !important;
+}
+.tjr-margin--top--large{
+  margin-top:2rem !important;
+}
+
+.tjr-margin--left--small{
+  margin-left: .5rem !important;
+}
+.tjr-margin--left--normal{
+  margin-left: 1rem !important;
+}
+.tjr-margin--left--large{
+  margin-left: 2rem !important;
+}
+.tjr-margin--left--none{
+  margin-left: 0 !important;
+}
+
+.tjr-margin--right--small{
+  margin-right: .5rem !important;
+}
+.tjr-margin--right--normal{
+  margin-right: 1rem !important;
+}
+.tjr-margin--right--large{
+  margin-right: 2rem !important;
+}
+.tjr-margin--right--none{
+  margin-right: 0 !important;
+}
+
+.tjr-margin--bottom--none{
+  margin-bottom: 0 !important;
+}
+.tjr-margin--bottom--normal{
+  margin-bottom: 1rem !important;
+}
+.tjr-margin--bottom--half{
+  margin-bottom: .5rem !important;
+}
+.tjr-margin--bottom--large{
+  margin-bottom:2rem !important;
+}
+
+.tjr-padding--none{
+  padding:0 !important;
+}
+.tjr-padding--small{
+  padding:.5rem !important;
+}
+.tjr-padding--normal{
+  padding:1rem !important;
+}
+.tjr-padding--large{
+  padding-left: 2rem !important;
+}
+
+.tjr-padding--top--none{
+  padding-top: 0 !important;
+}
+.tjr-padding--bottom--none{
+  padding-bottom: 0 !important;
+}
+.tjr-padding--left--none{
+  padding-left: 0 !important;
+}
+.tjr-padding--right--none{
+  padding-right: 0 !important;
+}
+
+.tjr-padding--top--small{
+  padding-top: .5rem !important;
+}
+.tjr-padding--bottom--small{
+  padding-bottom: .5rem !important;
+}
+.tjr-padding--left--small{
+  padding-left: .5rem !important;
+}
+.tjr-padding--right--small{
+  padding-right: .5rem !important;
+}
+
+.tjr-padding--top--normal{
+  padding-top: 1rem !important;
+}
+.tjr-padding--bottom--normal{
+  padding-bottom: 1rem !important;
+}
+.tjr-padding--left--normal{
+  padding-left: 1rem !important;
+}
+.tjr-padding--right--normal{
+  padding-right: 1rem !important;
+}
+
+.tjr-padding--top--large{
+  padding-top: 2rem !important;
+}
+.tjr-padding--bottom--large{
+  padding-bottom: 2rem !important;
+}
+.tjr-padding--left--large{
+  padding-left: 2rem !important;
+}
+.tjr-padding--right--large{
+  padding-right: 2rem !important;
+}
+
+.tjr-position--relative {
+  position: relative !important;
+}
+.tjr-position--absolute {
+  position: absolute !important;
+}
+.tjr-position--fixed {
+  position: fixed !important;
+}
+
+.tjr-show--xs{
+  @media only screen and (max-width: $breakpoint-xs-max) {
+    display: block !important;
+  }
+}
+
+.tjr-show--sm {
+  @media only screen and (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-sm-max) {
+    display: block !important;
+  }
+}
+.tjr-show--md {
+  @media only screen and (min-width: $breakpoint-md-min) and (max-width: $breakpoint-md-max) {
+    display: block !important;
+  }
+}
+.tjr-show--lg {
+  @media only screen and (min-width: $breakpoint-lg-min) {
+    display: block !important;
+  }
+}
+.tjr-show--xl {
+  @media only screen and (min-width: $breakpoint-xl) {
+    display: block;
+  }
+}
+
+
+.tjr-hide {
+  display: none !important;
+}
+
+.tjr-hide--xs{
+  @media only screen and (max-width: $breakpoint-xs-max) {
+    display: none !important;
+  }
+}
+.tjr-hide--sm {
+  @media only screen and (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-sm-max) {
+    display: none !important;
+  }
+}
+.tjr-hide--md {
+  @media only screen and (min-width:$breakpoint-md-min) and (max-width: $breakpoint-md-max) {
+    display: none !important;
+  }
+}
+.tjr-hide--lg {
+  @media only screen and (min-width: $breakpoint-lg-min) {
+    display: none !important;
+  }
+}
+.tjr-hide--xl {
+  @media only screen and (min-width: $breakpoint-xl) {
+    display: none !important;
+  }
+}
+
+// Display flex
+.tjr-flex{
+  display: flex;
+  &--row{
+    flex-direction: row;
+  }
+  &--column{
+    flex-direction: column;
+  }
+  &--wrap{
+    flex-wrap: wrap;
+  }
+  &--nowrap{
+    flex-wrap: nowrap;
+  }
+}

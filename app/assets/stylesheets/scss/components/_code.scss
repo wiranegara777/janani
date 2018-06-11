@@ -1,0 +1,12 @@
+pre.tjr-pre {
+  background: $color-neutral-primary-light;
+  color: $color-neutral-ash;
+  border-radius: $border-radius;
+  font-family: "Source Code Pro";
+  padding: 0 1rem;
+  border: 1px solid $color-neutral-primary;
+  box-shadow: inset 0 0 8px 0 rgba($color-neutral-primary, .8);
+}
+code.tjr-code {
+  white-space: pre;
+}

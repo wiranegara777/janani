@@ -1,0 +1,383 @@
+// @font-face {
+//   font-family: "tanjidor-glyph";
+//   src:  asset-url("#{$path__fonts}/tanjidor-glyph.eot?l4u1wj");
+//   src:  asset-url("#{$path__fonts}/tanjidor-glyph.eot?l4u1wj#iefix") format("embedded-opentype"),
+//     asset-url("#{$path__fonts}/tanjidor-glyph.ttf?l4u1wj") format("truetype"),
+//     asset-url("#{$path__fonts}/tanjidor-glyph.woff?l4u1wj") format("woff"),
+//     asset-url("#{$path__fonts}/tanjidor-glyph.svg?l4u1wj#tanjidor-glyph") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+@font-face {
+  font-family: "tanjidor-glyph";
+  src:  font-url("fonts/tanjidor-glyph.eot?l4u1wj");
+  src:  font-url("fonts/tanjidor-glyph.eot?l4u1wj#iefix") format("embedded-opentype"),
+    font-url("fonts/tanjidor-glyph.ttf?l4u1wj") format("truetype"),
+    font-url("fonts/tanjidor-glyph.woff?l4u1wj") format("woff"),
+    font-url("fonts/tanjidor-glyph.svg?l4u1wj#tanjidor-glyph") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tjr-glyph {
+  font-family: "tanjidor-glyph" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+	// font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline;
+}
+
+// Sidebar Glyphs
+.tjr-sidebar__glyph--dashboard {
+  &:before {
+    content: $tjr-glyph--dashboard;
+  }
+}
+.tjr-sidebar__glyph--promo-history {
+  &:before {
+    content: $tjr-glyph--promo-history;
+  }
+}
+.tjr-sidebar__glyph--transactions {
+  &:before {
+    content: $tjr-glyph--transactions;
+  }
+}
+.tjr-sidebar__glyph--billing {
+  &:before {
+    content: $tjr-glyph--billing;
+  }
+}
+.tjr-sidebar__glyph--snaplink {
+  &:before {
+    content: $tjr-glyph--snaplink;
+  }
+}
+.tjr-sidebar__glyph--accounts {
+  &:before {
+    content: $tjr-glyph--accounts;
+  }
+}
+.tjr-sidebar__glyph--setting {
+  &:before {
+    content: $tjr-glyph--setting;
+  }
+}
+.tjr-sidebar__glyph--payout {
+  &:before {
+    content: $tjr-glyph--payout;
+  }
+}
+.tjr-sidebar__glyph--channels {
+  &:before {
+    content: $tjr-glyph--channels;
+  }
+}
+.tjr-sidebar__glyph--beneficiaries {
+  &:before {
+    content: $tjr-glyph--beneficiaries;
+  }
+}
+.tjr-sidebar__glyph--hamburger {
+  &:before {
+    content: $tjr-glyph--hamburger;
+  }
+}
+
+// Header Glyphs
+.tjr-header__glyph--notification {
+  &:before {
+    content: $tjr-glyph--notification;
+  }
+}
+.tjr-header__glyph--setting {
+  &:before {
+    content: $tjr-glyph--setting-bold;
+  }
+}
+.tjr-header__glyph--user {
+  &:before {
+    content: $tjr-glyph--user;
+  }
+}
+.tjr-header__glyph--apps {
+  &:before {
+    content: $tjr-glyph--apps;
+  }
+}
+.tjr-header__glyph--search {
+  &:before {
+    content: $tjr-glyph--search;
+  }
+}
+
+// Glyph Overview
+.overview__glyph--promo-active {
+  &:before {
+    content: $tjr-glyph--promo-active;
+  }
+}
+.overview__glyph--promo-all {
+  &:before {
+    content: $tjr-glyph--promo-all;
+  }
+}
+
+// Glyph Global
+.tjr-glyph--plus {
+  &:before {
+    content: $tjr-glyph--plus;
+  }
+}
+.tjr-glyph--minus {
+  &:before {
+    content: $tjr-glyph--minus;
+  }
+}
+.tjr-glyph--grid {
+  &:before {
+    content: $tjr-glyph--grid;
+  }
+}
+.tjr-glyph--list {
+  &:before {
+    content: $tjr-glyph--list;
+  }
+}
+.tjr-glyph--close {
+  &:before {
+    content: $tjr-glyph--close;
+  }
+}
+.tjr-glyph--download {
+  &:before {
+    content: $tjr-glyph--download;
+  }
+}
+.tjr-glyph--upload {
+  &:before {
+    content: $tjr-glyph--upload;
+  }
+}
+.tjr-glyph--edit {
+  &:before {
+    content: $tjr-glyph--edit;
+  }
+}
+.tjr-glyph--ellipses {
+  &:before {
+    content: $tjr-glyph--ellipses;
+  }
+}
+.tjr-glyph--filter {
+  &:before {
+    content: $tjr-glyph--filter;
+  }
+}
+.tjr-glyph--alias {
+  &:before {
+    content: $tjr-glyph--alias;
+  }
+}
+.tjr-glyph--arrow-down {
+  &:before {
+    content: $tjr-glyph--arrow-down;
+  }
+}
+.tjr-glyph--arrow-left {
+  &:before {
+    content: $tjr-glyph--arrow-left;
+  }
+}
+.tjr-glyph--arrow-right {
+  &:before {
+    content: $tjr-glyph--arrow-right;
+  }
+}
+.tjr-glyph--arrow-up {
+  &:before {
+    content: $tjr-glyph--arrow-up;
+  }
+}
+.tjr-glyph--checkmark {
+  &:before {
+    content: $tjr-glyph--checkmark;
+  }
+}
+.tjr-glyph--chevron-down {
+  &:before {
+    content: $tjr-glyph--chevron-down;
+  }
+}
+.tjr-glyph--chevron-left {
+  &:before {
+    content: $tjr-glyph--chevron-left;
+  }
+}
+.tjr-glyph--chevron-right {
+  &:before {
+    content: $tjr-glyph--chevron-right;
+  }
+}
+.tjr-glyph--chevron-up {
+  &:before {
+    content: $tjr-glyph--chevron-up;
+  }
+}
+.tjr-glyph--eye-shut {
+  &:before {
+    content: $tjr-glyph--eye-shut;
+  }
+}
+.tjr-glyph--eye {
+  &:before {
+    content: $tjr-glyph--eye;
+  }
+}
+.tjr-glyph--time {
+  &:before {
+    content: $tjr-glyph--time;
+  }
+}
+.tjr-glyph--calendar {
+  &:before {
+    content: $tjr-glyph--calendar;
+  }
+}
+.tjr-glyph--zoom-in {
+  &:before {
+    content: $tjr-glyph--zoom-in;
+  }
+}
+.tjr-glyph--zoom-out {
+  &:before {
+    content: $tjr-glyph--zoom-out;
+  }
+}
+.tjr-glyph--info {
+  &:before {
+    content: $tjr-glyph--info;
+  }
+}
+.tjr-glyph--help {
+  &:before {
+    content: $tjr-glyph--help;
+  }
+}
+.tjr-glyph--alert {
+  &:before {
+    content: $tjr-glyph--alert;
+  }
+}
+.tjr-glyph--logo-midtrans {
+  &:before {
+    content: $tjr-glyph--logo-midtrans;
+  }
+}
+.tjr-glyph--logotype-midtrans {
+  &:before {
+    content: $tjr-glyph--logotype-midtrans;
+  }
+}
+.tjr-glyph--logo-iris {
+  &:before {
+    content: $tjr-glyph--logo-iris;
+  }
+}
+.tjr-glyph--logotype-iris {
+  &:before {
+    content: $tjr-glyph--logotype-iris;
+  }
+}
+.tjr-glyph--logo-aegis {
+  &:before {
+    content: $tjr-glyph--logo-aegis;
+  }
+}
+.tjr-glyph--logotype-aegis {
+  &:before {
+    content: $tjr-glyph--logotype-aegis;
+  }
+}
+.tjr-glyph--logo-prism {
+  &:before {
+    content: $tjr-glyph--logo-prism;
+  }
+}
+.tjr-glyph--logotype-prism {
+  &:before {
+    content: $tjr-glyph--logotype-prism;
+  }
+}
+.tjr-glyph--logo-echo {
+  &:before {
+    content: $tjr-glyph--logo-echo;
+  }
+}
+.tjr-glyph--logotype-echo {
+  &:before {
+    content: $tjr-glyph--logotype-echo;
+  }
+}
+.tjr-glyph--logo-selly {
+  &:before {
+    content: $tjr-glyph--logo-selly;
+  }
+}
+.tjr-glyph--logotype-selly {
+  &:before {
+    content: $tjr-glyph--logotype-selly;
+  }
+}
+
+// Color Logos
+.tjr-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.tjr-logo.display--block {
+  display: block;
+}
+.tjr-logo.display--inline-block {
+  display: inline-block;
+}
+.tjr-logo.display--inline {
+  display: inline;
+}
+.tjr-logo--midtrans {
+  // width: 368px;
+  // height: 64px;
+  content: asset-url("#{$path__logos}/midtrans.svg");
+}
+.tjr-logo--iris {
+  // width: 172px;
+  // height: 64px;
+  content: asset-url("#{$path__logos}/iris.svg");
+}
+.tjr-logo--aegis {
+  // width: 252px;
+  // height: 64px;
+  content: asset-url("#{$path__logos}/aegis.svg");
+}
+.tjr-logo--prism {
+  // width: 266px;
+  // height: 64px;
+  content: asset-url("#{$path__logos}/prism.svg");
+}
+.tjr-logo--selly {
+  // width: 226px;
+  // height: 64px;
+  content: asset-url("#{$path__logos}/selly.svg");
+}
+.tjr-logo--echo {
+  // width: 250px;
+  // height: 64px;
+  content: asset-url("#{$path__logos}/echo.svg");
+}

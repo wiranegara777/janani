@@ -1,0 +1,98 @@
+.muffin {
+  width: 360px;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &.register {
+    width: 640px;
+    transform: translate(-50%, -0%);
+    margin-top: 2rem;
+    top: 0;
+    @media all and (max-width: 672px) {
+      position: relative;
+      transform: none;
+      left: 0;
+      min-width: 360px;
+      width: calc(100% - 32px);
+    }
+    @media all and (max-height: 799px) {
+      position: relative;
+      transform: none;
+      left: 0;
+      min-width: 360px;
+      width: calc(100% - 32px);
+    }
+    @media all and (max-height: 799px) and (min-width: 673px) {
+      max-width: 640px;
+    }
+  }
+  @media all and (max-width: $breakpoint-sm) {
+    position: relative;
+    transform: none;
+    left: 0;
+    margin: 2rem auto 0;
+  }
+  @media all and (max-height: 799px) {
+    position: relative;
+    transform: none;
+    left: 0;
+    margin: 2rem auto 0;
+  }
+}
+
+.softhide {
+  transform: scaleY(0);
+  height: 0;
+  transform-origin: bottom center;
+  transition: transform .4s, height .4s;
+  * {
+    height: 0;
+    transition: height .4s;
+  }
+  &.show {
+    transform: scaleY(1);
+    height: auto;
+    * {
+      height: auto;
+    }
+  }
+}
+
+.hr--or {
+  text-align: center;
+  position: relative;
+  color: $color-neutral-secondary-light;
+  margin: .875rem 0;
+  span {
+    display: inline-block;
+    width: calc(50% - 2rem - 1rem);
+    background: $color-neutral-gray;
+    height: 1px;
+    position: absolute;
+    margin-top: 10px;
+    &.left {
+      left: 1rem;
+    }
+    &.right {
+      right: 1rem;
+    }
+  }
+}
+
+/* Overriding Firefox */
+
+.overlay.active {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.input__field--text:required,
+.input__field--text:invalid {
+  box-shadow: none;
+}
+
+.input__field--select {
+  -moz-appearance: none;
+}

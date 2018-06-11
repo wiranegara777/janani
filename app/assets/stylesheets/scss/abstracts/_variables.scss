@@ -1,0 +1,220 @@
+// Midtrans Primary Colors
+// $color-midtrans-aqua: #07ADDC;
+// $color-midtrans-ocean: #2F80C2;
+// $color-midtrans-sky: #88C7E8;
+$color-midtrans-aqua: #07ADDC;
+$color-midtrans-ocean: #3C5DAA;
+$color-midtrans-sky: #5CA6DB;
+
+// .scheme--midtrans
+$color-midtrans-primary: $color-midtrans-aqua !default;
+$color-midtrans-primary-dark: $color-midtrans-ocean !default;
+$color-midtrans-primary-light: $color-midtrans-sky !default;
+
+// .scheme--echo
+  // $color-midtrans-primary: #704CAA !default;
+  // $color-midtrans-primary-dark: darken(#704CAA, 20%) !default;
+  // $color-midtrans-primary-light: lighten(#704CAA, 20%) !default;
+
+// .scheme--gojek
+  // $color-midtrans-primary: #39b54a !default;
+  // $color-midtrans-primary-dark: #009444 !default;
+  // // $color-midtrans-primary-light: #8dc63f !default;
+  // $color-midtrans-primary-light: lighten(#39b54a, 30%) !default;
+
+// // .scheme--gojek
+//   $color-midtrans-primary: #e4292c !default;
+//   $color-midtrans-primary-dark: #b62025 !default;
+//   $color-midtrans-primary-light: lighten(#e4292c, 30%) !default;
+
+// Midtrans Secondary Colors
+$color-midtrans-orange: #FAAF3F;
+$color-midtrans-yellow: #FACC15;
+$color-midtrans-green: #39b54a;
+$color-midtrans-red: #D3385C;
+$color-midtrans-fuschia: #912862;
+$color-midtrans-purple: #704CAA;
+$color-midtrans-gray: #929497;
+$color-midtrans-grey: #929497;
+
+// Midtrans Tertiary Colors
+$color-midtrans-choco: #773817;
+$color-midtrans-red-bright: #F85223;
+$color-midtrans-turqoise: #2CC7A3;
+$color-midtrans-blue-bright: #0550C0;
+
+// Neutral Colors
+$color-black: #000000;
+$color-neutral-primary: #212223;
+$color-neutral-primary-light: #46484A;
+$color-neutral-secondary: #787A7E;
+$color-neutral-secondary-light: #929497;
+$color-neutral-gray: #BEBEBE;
+$color-neutral-ash: #EFEFEF;
+$color-neutral-ash-light: #F2F2F2;
+$color-white: #FFFFFF;
+
+$color-utility-positive: $color-midtrans-green !default;
+$color-utility-positive-subtle: lighten($color-midtrans-green, 30%) !default;
+$color-utility-positive-strong: darken($color-midtrans-green, 20%) !default;
+$color-utility-caution: $color-midtrans-orange !default;
+$color-utility-caution-subtle: lighten($color-midtrans-orange, 20%) !default;
+$color-utility-caution-strong: darken($color-midtrans-orange, 20%) !default;
+$color-utility-negative: $color-midtrans-red !default;
+$color-utility-negative-subtle: lighten($color-midtrans-red, 30%) !default;
+$color-utility-negative-strong: darken($color-midtrans-red, 20%) !default;
+$color-utility-neutral: $color-midtrans-aqua !default;
+$color-utility-neutral-subtle: $color-midtrans-sky !default;
+$color-utility-neutral-strong: $color-midtrans-ocean !default;
+
+// Utility Colors
+// $color-utility-positive: #03804d !default;
+// $color-utility-positive-subtle: #d4f3e6 !default;
+// $color-utility-caution: #a59b15 !default;
+// $color-utility-caution-subtle: #fffecf !default;
+// $color-utility-negative: #b12a0b !default;
+// $color-utility-negative-subtle: #fdded8 !default;
+// $color-utility-neutral: #0192d0 !default;
+// $color-utility-neutral-subtle: #d3f2ff !default;
+
+// Text Color
+$color-text: $color-neutral-primary !default;
+$color-text-subtle: $color-neutral-secondary !default;
+
+$color-heading: $color-neutral-primary !default;
+$color-heading-accent: $color-neutral-primary !default;
+
+// Text Link
+$color-text-link: $color-neutral-primary !default;
+$color-text-link-hover: $color-neutral-primary-light !default;
+$color-text-link-visited: $color-black !default;
+$color-text-link-active: $color-neutral-primary !default;
+
+$color-text-link-light: $color-white !default;
+$color-text-link-light-hover: $color-white !default;
+$color-text-link-light-visited: $color-white !default;
+
+// Borders
+$color-border: $color-neutral-secondary !default;
+
+// Typography
+$font : "Source Sans Pro", HelveticaNeue, Helvetica, Arial, Calibri, sans-serif !default;
+$font-glyph : "tanjidor-glyph" !important !default;
+
+$font-size-small : 0.75rem !default;
+$font-size-small-2 : 0.875rem !default;
+$font-size-med : 1rem !default;
+$font-size-med-2: 1.0625rem !default;
+$font-size-large : 1.4375rem !default;
+
+// Layout
+$l-max-width: 80em !default;
+
+// Spacing
+$space : 1em !default;
+$space-and-half : $space*1.5 !default;
+$space-double : $space*2 !default;
+$space-quad : $space*4 !default;
+$space-half : $space/2 !default;
+$pad : 1em  !default;
+$pad-and-half : $pad*1.5  !default;
+$pad-double : $pad*2  !default;
+$pad-half : $pad/2  !default;
+$pad-quarter :$pad/4  !default;
+
+// Borders
+$border-med: 3px  !default;
+$border-thick: 7px  !default;
+
+$border-radius: 4px  !default;
+$border-rounded: 999px  !default;
+// Animation
+$anim-speed-quick: 0.2s !default;
+$anim-ease: ease !default;
+
+// BREAKPOINTS
+$breakpoint-xs: 480px !default;
+$breakpoint-xs-min: $breakpoint-xs !default;
+
+$breakpoint-sm: 768px !default;
+$breakpoint-sm-min: $breakpoint-sm !default;
+
+$breakpoint-md: 992px !default;
+$breakpoint-md-min: $breakpoint-md !default;
+
+$breakpoint-lg: 1200px !default;
+$breakpoint-lg-min: $breakpoint-lg !default;
+
+$breakpoint-xl: 1200px !default;
+
+$breakpoint-xs-max: ($breakpoint-sm-min - 1) !default;
+$breakpoint-sm-max: ($breakpoint-md-min - 1) !default;
+$breakpoint-md-max: ($breakpoint-lg-min - 1) !default;
+
+
+// Icons
+$tjr-glyph--accounts: "\e900";
+$tjr-glyph--alert: "\e901";
+$tjr-glyph--alias: "\e902";
+$tjr-glyph--apps: "\e903";
+$tjr-glyph--arrow-down: "\e904";
+$tjr-glyph--arrow-left: "\e905";
+$tjr-glyph--arrow-right: "\e906";
+$tjr-glyph--arrow-up: "\e907";
+$tjr-glyph--beneficiaries: "\e908";
+$tjr-glyph--billing: "\e909";
+$tjr-glyph--calendar: "\e90a";
+$tjr-glyph--channels: "\e90b";
+$tjr-glyph--checkmark: "\e90c";
+$tjr-glyph--chevron-down: "\e90d";
+$tjr-glyph--chevron-left: "\e90e";
+$tjr-glyph--chevron-right: "\e90f";
+$tjr-glyph--chevron-up: "\e910";
+$tjr-glyph--close: "\e911";
+$tjr-glyph--dashboard: "\e912";
+$tjr-glyph--download: "\e913";
+$tjr-glyph--edit: "\e914";
+$tjr-glyph--ellipses: "\e915";
+$tjr-glyph--eye-shut: "\e916";
+$tjr-glyph--eye: "\e917";
+$tjr-glyph--filter: "\e918";
+$tjr-glyph--grid: "\e919";
+$tjr-glyph--hamburger: "\e91a";
+$tjr-glyph--help: "\e91b";
+$tjr-glyph--info: "\e91c";
+$tjr-glyph--list: "\e91d";
+$tjr-glyph--logo-aegis: "\e91e";
+$tjr-glyph--logo-echo: "\e91f";
+$tjr-glyph--logo-iris: "\e920";
+$tjr-glyph--logo-midtrans: "\e921";
+$tjr-glyph--logo-prism: "\e922";
+$tjr-glyph--logo-selly: "\e923";
+$tjr-glyph--logotype-aegis: "\e924";
+$tjr-glyph--logotype-echo: "\e925";
+$tjr-glyph--logotype-iris: "\e926";
+$tjr-glyph--logotype-midtrans: "\e927";
+$tjr-glyph--logotype-prism: "\e928";
+$tjr-glyph--logotype-selly: "\e929";
+$tjr-glyph--minus: "\e92a";
+$tjr-glyph--notification: "\e92b";
+$tjr-glyph--payout: "\e92c";
+$tjr-glyph--plus: "\e92d";
+$tjr-glyph--promo-active: "\e92e";
+$tjr-glyph--promo-all: "\e92f";
+$tjr-glyph--promo-history: "\e930";
+$tjr-glyph--search: "\e931";
+$tjr-glyph--setting-bold: "\e932";
+$tjr-glyph--setting: "\e933";
+$tjr-glyph--snaplink: "\e934";
+$tjr-glyph--time: "\e935";
+$tjr-glyph--transactions: "\e936";
+$tjr-glyph--upload: "\e937";
+$tjr-glyph--user: "\e938";
+$tjr-glyph--zoom-in: "\e939";
+$tjr-glyph--zoom-out: "\e93a";
+
+// PATHS
+$path__base: "/" !default; // Used in rails apps to override the base paths
+$path__fonts: "#{$path__base}fonts" !default;
+$path__images: "#{$path__base}images" !default;
+$path__logos: "#{$path__images}/logo" !default;

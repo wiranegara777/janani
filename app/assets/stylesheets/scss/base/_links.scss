@@ -1,0 +1,10 @@
+a {
+	color: $color-neutral-secondary;
+	text-decoration: none;
+	outline: 0;
+	transition: all $anim-speed-quick $anim-ease;
+
+	&:hover, &:focus {
+		color: $color-neutral-primary-light;
+	}
+}

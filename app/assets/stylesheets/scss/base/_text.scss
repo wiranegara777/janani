@@ -1,0 +1,20 @@
+p {
+	margin-bottom: $space;
+}
+blockquote {
+  font-style:italic;
+  border-left: 1px solid $color-neutral-secondary;
+  color: $color-neutral-secondary;
+	padding-left: $pad;
+	margin-bottom: $space;
+}
+hr {
+	border: 0;
+  height: 1px;
+  background: $color-neutral-secondary-light;
+  margin: $space 0;
+}
+abbr {
+  border-bottom: 1px dotted $color-neutral-secondary;
+  cursor: help;
+}

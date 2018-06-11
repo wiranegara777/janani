@@ -1,0 +1,95 @@
+.tjr-alert {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba($color-black, .1);
+  overflow: hidden;
+  width: 100%;
+  min-height: 48px;
+  padding: 16px 48px 16px 16px;
+  background: $color-white;
+  margin-bottom: 8px;
+  background: lighten($color-midtrans-primary-light, 20%);
+  color: $color-midtrans-primary-dark;
+  a {
+    color: $color-midtrans-primary-dark;
+    border-bottom: 1px dotted $color-midtrans-primary-dark;
+  }
+  &--primary {
+    background: lighten($color-midtrans-primary-light, 20%);
+    color: $color-midtrans-primary-dark;
+    a {
+      color: $color-midtrans-primary-dark;
+      border-bottom: 1px dotted $color-midtrans-primary-dark;
+    }
+  }
+  &--success {
+    background: $color-utility-positive-subtle;
+    color: $color-utility-positive-strong;
+    a {
+      color: $color-utility-positive-strong;
+      border-bottom: 1px dotted $color-utility-positive-strong;
+    }
+  }
+  &--warning {
+    background: $color-utility-caution-subtle;
+    color: $color-utility-caution-strong;
+    a {
+      color: $color-utility-caution-strong;
+      border-bottom: 1px dotted $color-utility-caution-strong;
+    }
+  }
+  &--danger {
+    background: $color-utility-negative-subtle;
+    color: $color-utility-negative-strong;
+    a {
+      color: $color-utility-negative-strong;
+      border-bottom: 1px dotted $color-utility-negative-strong;
+    }
+  }
+  &--neutral {
+    background: lighten($color-midtrans-sky, 20%);
+    color: $color-midtrans-ocean;
+    a {
+      color: $color-midtrans-ocean;
+      border-bottom: 1px dotted $color-midtrans-ocean;
+    }
+  }
+  &--gray, &--grey {
+    background: $color-neutral-ash;
+    color: $color-neutral-primary;
+    a {
+      color: $color-neutral-primary;
+      border-bottom: 1px dotted $color-neutral-primary;
+    }
+  }
+}
+.tjr-alert__close {
+  position: absolute;
+  display: block;
+  line-height: 1;
+  border-radius: $border-radius;
+  padding: 8px;
+  right: 8px;
+  top: 8px;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: background .2s;
+  &:hover, &:active {
+    background: rgba($color-black,.2);
+    color: $color-white;
+    opacity: 1;
+  }
+  &:focus {
+    background: rgba($color-black,.2);
+    color: $color-white;
+    opacity: 1;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba($color-black, .3);
+  }
+}
+.tjr-alert ul, .tjr-alert ol {
+  margin: .5rem 1.5rem .5rem;
+  li {
+    margin-bottom: .25rem;
+  }
+}

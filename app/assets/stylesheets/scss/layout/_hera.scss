@@ -1,0 +1,392 @@
+// accordion
+.tjr-accordion {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  overflow: hidden;
+  @include clearfix;
+  &:first-child{
+    margin-top:-1rem;
+  }
+}
+.tjr-accordion__input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tjr-accordion__label {
+  position: relative;
+  display: block;
+  padding: 1rem 0;
+  font-weight: bold;
+  border-bottom: 1px solid $color-neutral-ash;
+  cursor: pointer;
+  &::after {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.75rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+    font-family: "tanjidor-glyph";
+    text-align: center;
+    font-size: .8rem;
+  }
+}
+.tjr-accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+  p{
+    margin:1rem;
+  }
+}
+//:checked
+.tjr-accordion__input:checked ~ .tjr-accordion__content {
+  max-height: 100rem;
+}
+.tjr-accordion__input[type=checkbox] + .tjr-accordion__label::after {
+  content: $tjr-glyph--plus;
+}
+.tjr-accordion__input[type=radio] + .tjr-accordion__label::after {
+  content: $tjr-glyph--chevron-down;
+}
+.tjr-accordion__input[type=checkbox]:checked + .tjr-accordion__label::after {
+  transform: rotate(315deg);
+}
+.tjr-accordion__input[type=radio]:checked + .tjr-accordion__label::after {
+  transform: rotateX(180deg);
+}
+
+
+// Transaction Detail
+.tjr-box__inside__card{
+  padding:1rem;
+  background: rgba($color-midtrans-primary, .1);
+  border-radius: 4px;
+  display: block;
+  @include clearfix;
+  width: 100%;
+  height: 100%;
+  @media only screen and(max-width: 1199px){
+    margin-bottom:1rem;
+    height: calc(100% - 1rem);
+  }
+}
+
+// Dropdown
+.tjr-dropdown__menu{
+	min-width: 200px;
+	min-height: 100px;
+	position: absolute;
+	top:calc(100%);
+	padding: 0.5rem 0;
+	z-index: 999;
+	display: none;
+  color: $color-neutral-secondary;
+  text-transform: none;
+  @include clearfix;
+  .tjr-dropdown__menu__body{
+    background:$color-white;
+  	border: 1px solid lighten($color-neutral-secondary-light, 30%);
+  	box-shadow: 0 4px 20px rgba($color-black, .2);
+  	border-bottom-left-radius: 0.25rem;
+  	border-bottom-right-radius: 0.25rem;
+    width: 100%;
+    display: block;
+    @include clearfix;
+  }
+	&--2x{
+		min-width: 380px;
+	}
+	&--right{
+		right:0rem;
+    text-align: right;
+	}
+	&--left{
+		left: 0rem;
+    text-align: left;
+	}
+}
+
+.tjr-dropdown{
+  position: relative;
+  outline: none;
+  box-shadow: none;
+  display: inline-block;
+  &--full{
+    display: block;
+    width: 100%;
+  }
+  &:focus,
+  &.tjr-active{
+    >.tjr-dropdown__menu{
+      display: block;
+    }
+  }
+}
+// Handle notification style
+.tjr-header__dropdown{
+  @media only screen and(max-width:1280px){
+    overflow-y: scroll;
+  }
+  >li{
+    &.tjr-list{
+      >a{
+        border-bottom: 1px solid $color-neutral-ash;
+        padding-bottom: 1rem;
+        .order__id{
+          display: block;
+          color: $color-midtrans-primary;
+          font-size: 1.2rem;
+          margin-bottom: 4px;
+        }
+        .order__time,
+        .order__price{
+          color: $color-neutral-gray;
+          padding-right:.5rem;
+        }
+        .order__price{
+          padding-left: .5rem;
+          border-left:1px solid $color-neutral-ash;
+          font-weight: bold;
+        }
+        @media only screen and(max-width:$breakpoint-xs-max){
+          border-color:$color-neutral-gray;
+          .tjr-text--mute{
+            color: $color-neutral-ash-light !important;
+          }
+          .order__time,
+          .order__price{
+            color: $color-neutral-ash;
+          }
+        }
+      }
+      &:only-child,
+      &:last-child{
+        >a{
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.tjr-empty__notification{
+  padding:1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $color-neutral-secondary-light;
+  .tjr-glyph{
+    display: inline-block;
+    margin-bottom: .75rem;
+    font-size: 1.5rem;
+  }
+}
+.tjr-logout{
+  width: 100%;
+  >a{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    color: $color-midtrans-red;
+  }
+}
+
+// fix old hera heading title
+.content-name{
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.page-name{
+  font-weight: 700;
+  margin-bottom: .75rem;
+  font-size: 1.5;
+}
+.sub-heading {
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+// Transaction table list view
+.tjr-table__transactions{
+  @media only screen and(max-width:767px){
+    thead, tbody, tr, th, td{
+      display: block;
+    }
+    thead{
+      >tr{
+        position: absolute;
+        left:-9999rem;
+        top:-9999rem;
+      }
+    }
+    tbody{
+      >tr{
+        border-bottom: 1px solid $color-neutral-ash;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        padding:.5rem 0;
+        position: relative;
+        min-height: 4rem;
+        @include clearfix;
+        >td{
+          border-bottom:none;
+          border-top:none;
+          padding:.5rem 1rem;
+          position: relative;
+          background: transparent;
+          &:nth-of-type(1),
+          &.tjr-payment__type__td{
+            position: absolute;
+            right:0;
+            top:.5rem;
+            z-index:1;
+            font-size: .75rem;
+          }
+          &:nth-of-type(2),
+          &.tjr-date__td{
+            position: absolute;
+            left:0;
+            top:.5rem;
+            color: $color-black;
+            font-size: .75rem;
+            z-index: 1;
+          }
+          &:nth-of-type(3),
+          .tjr-order__id__td{
+            position: absolute;
+            left:0;
+            bottom:.25rem;
+            z-index: 2;
+            font-weight: 400 !important;
+            max-width: 50%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 0;
+            a{
+              font-weight: 400;
+            }
+          }
+          &:nth-of-type(4),
+          &.tjr-email__td{
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: left;
+            text-align: left;
+            height: 5rem;
+            justify-content: left;
+            text-align: left;
+            align-items: center;
+            font-size: 1rem;
+            span,
+            .tjr-trunatable-field{
+              max-width: 50%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            @media only screen and(max-width: 359px){
+              font-size: 1rem;
+            }
+          }
+          &:nth-of-type(5),
+          &.tjr-amount__td{
+            position: absolute;
+            right:0;
+            top:.5rem;
+            z-index: 1;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            font-size: 1rem;
+            @media only screen and(max-width: 359px){
+              font-size: 1rem;
+            }
+          }
+          &:nth-of-type(6),
+          &.trj-status__td{
+            position: absolute;
+            right:0;
+            bottom: .25rem;
+            z-index: 1;
+            .tjr-status{
+              font-size: .75rem;
+              padding:0rem .5rem;
+              color: $color-white !important;
+              &--with--dropdown{
+                padding-right: .5rem !important;
+                &:after{
+                  display: none;
+                }
+              }
+              &:before{
+                width: 100%;
+                height: 100%;
+                border-radius: 50px;
+                z-index: -1;
+                top:0;
+                left:0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Fix bank ratio percent in old hera not align
+#bank-ratio-form{
+  .percent-cont{
+    line-height: 31px !important;
+  }
+}
+
+#tjr-download-modal {
+  .tjr-modal__body {
+    .tjr-input__label {
+      @media all and (min-width: $breakpoint-sm) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+// Override dropdown logout
+.tjr-dropdown__action{
+  background:lighten($color-neutral-secondary-light, 36%) !important;
+  color: $color-midtrans-red !important;
+  font-weight: 700 !important;
+  padding:1rem !important;
+  border:none !important;
+  width: 100%;
+  &:hover{
+    background:lighten($color-neutral-secondary-light, 28%) !important;
+  }
+  @media only screen and(max-width: $breakpoint-xs-max){
+		background: $color-neutral-primary !important;
+		&:hover, &:active, &:focus {
+			background: $color-neutral-primary-light !important;
+		}
+  }
+}

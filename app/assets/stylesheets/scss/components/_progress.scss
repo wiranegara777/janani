@@ -1,0 +1,51 @@
+.tjr-progress {
+  position: relative;
+  width: calc(100% - 32px);
+  height: 1rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: $color-neutral-ash;
+  border-radius: $border-rounded;
+  margin: 16px;
+}
+.tjr-progress__bar {
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  vertical-align: middle;
+  border-radius: $border-rounded;
+  margin: 0;
+  color: $color-white;
+  background-color: $color-midtrans-primary;
+  &.tjr-progress--primary {background-color: $color-midtrans-primary;}
+  &.tjr-progress--success {background-color: $color-utility-positive;}
+  &.tjr-progress--warning {background-color: $color-utility-caution;}
+  &.tjr-progress--danger {background-color: $color-utility-negative;}
+  &.tjr-progress--neutral {background-color: $color-utility-neutral;}
+}
+
+// Sizes
+.tjr-progress {
+  &.tjr-progress--thin {
+    height: 4px;
+    font-size: 0;
+    .tjr-progress__bar {
+      height: 4px;
+      line-height: 4px;
+    }
+  }
+}
+
+.pageloader {
+  position: fixed;
+  height: 2px;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: -1;
+  &.loading {
+    display: block;
+    background-color: $color-midtrans-primary;
+    z-index: 999999;
+  }
+}

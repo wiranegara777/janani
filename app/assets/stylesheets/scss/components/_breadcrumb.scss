@@ -1,0 +1,32 @@
+.tjr-page-title__wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+.tjr-page-title__heading {
+  font-size: 1.25rem;
+  color: $color-neutral-primary;
+  font-weight: 700;
+}
+.tjr-breadcrumb {
+  position: relative;
+  color: $color-neutral-secondary;
+  padding: 8px 0;
+  font-size: 0.75rem;
+}
+.tjr-breadcrumb__history {
+  color: $color-neutral-secondary-light;
+  &:active, &:hover {
+    color: $color-neutral-primary-light;
+  }
+  &:focus {
+    border-bottom: 1px dotted $color-neutral-secondary-light;
+  }
+}
+.tjr-breadcrumb__current {
+  color: $color-neutral-primary;
+}
+.tjr-breadcrumb__chevron {
+  display: inline-block;
+  color: $color-neutral-gray;
+  padding: 0 4px;
+}

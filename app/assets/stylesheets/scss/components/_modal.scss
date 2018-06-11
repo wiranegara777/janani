@@ -1,0 +1,209 @@
+.tjr-modal__wrapper {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  z-index: 5001;
+  overflow: scroll;
+  transition: all .01s;
+  transform: scale(0,0);
+  transform-origin: center center;
+  transition-delay: 0s;
+  &.tjr-active {
+    transform: scale(1,1);
+  }
+}
+
+.tjr-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  background: $color-black;
+  z-index: 5000;
+  opacity: 0;
+  transition: all .01s ease-out;
+  &.tjr-active {
+    min-height: 100vh;
+    height: 1000%;
+    width: 100vw;
+    opacity: .7;
+  }
+}
+
+.tjr-modal {
+  position: relative;
+  width: 480px;
+  left: calc(50% - 32px);
+  margin: 16px;
+  height: auto;
+  z-index: 6001;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba($color-black, .1);
+  background-color: $color-white;
+}
+.tjr-modal:not(.tjr-modal--center) {
+  transform: translate(calc(-50% + 16px), -100%);
+  transform-origin: center center;
+  opacity: 0;
+  transition: all .3s ease-out;
+}
+.tjr-modal__wrapper.tjr-active {
+  .tjr-modal:not(.tjr-modal--center) {
+    opacity: 1;
+    transform: translate(calc(-50% + 16px), 0);
+  }
+}
+
+// By Size
+.tjr-modal--sm {
+  width: $breakpoint-sm;
+}
+.tjr-modal--md {
+  width: $breakpoint-md;
+}
+.tjr-modal--lg {
+  width: $breakpoint-lg;
+}
+.tjr-modal--xl {
+  width: $breakpoint-xl;
+}
+.tjr-modal--full {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+}
+
+// By Position
+.tjr-modal--center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+  transform-origin: center center;
+  opacity: 0;
+  transition: all .3s ease-out;
+}
+.tjr-modal__wrapper.tjr-active {
+  .tjr-modal--center {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Breakpoints
+$tjr-modal-breakpoint-sm : $breakpoint-sm + ($grid-gutter-width * 2);
+$tjr-modal-breakpoint-md : $breakpoint-md + ($grid-gutter-width * 2);
+$tjr-modal-breakpoint-lg : $breakpoint-lg + ($grid-gutter-width * 2);
+$tjr-modal-breakpoint-xl : $breakpoint-xl + ($grid-gutter-width * 2);
+
+@media all and (max-width: $tjr-modal-breakpoint-sm) {
+  .tjr-modal, .tjr-modal--sm, .tjr-modal--sm.tjr-modal--center {
+    width: calc(100% - 32px);
+    left: 0;
+    top: 16px;
+    transform: translate(0,0)!important;
+  }
+}
+@media all and (max-width: $tjr-modal-breakpoint-md) {
+  .tjr-modal--md, .tjr-modal--md.tjr-modal--center {
+    width: calc(100% - 32px);
+    left: 0;
+    top: 16px;
+    transform: translate(0,0)!important;
+  }
+}
+@media all and (max-width: $tjr-modal-breakpoint-lg) {
+  .tjr-modal--lg, .tjr-modal--lg.tjr-modal--center {
+    width: calc(100% - 32px);
+    left: 0;
+    top: 16px;
+    transform: translate(0,0)!important;
+  }
+}
+@media all and (max-width: $tjr-modal-breakpoint-xl) {
+  .tjr-modal--xl, .tjr-modal--xl.tjr-modal--center {
+    width: calc(100% - 32px);
+    left: 0;
+    top: 16px;
+    transform: translate(0,0)!important;
+  }
+}
+.tjr-modal--full, .tjr-modal--full.tjr-modal--center {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  transform: translate(0,0)!important;
+}
+
+.tjr-modal__content {
+
+}
+.tjr-modal__header {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid $color-neutral-ash-light;
+}
+
+.tjr-modal__title {
+  width: calc(100% - 48px);
+  font-size: 1.2rem;
+  color: $color-neutral-primary;
+}
+.tjr-modal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 38px;
+  height: 38px;
+  margin: 8px;
+  background: $color-white;
+  border: 0;
+  color: $color-neutral-gray;
+  transition: color .2s, background .2s;
+  border-radius: $border-radius;
+  &:hover, &:active {
+    background: $color-neutral-ash-light;
+    color: $color-neutral-secondary;
+  }
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 4px $color-neutral-gray;
+  }
+}
+
+.tjr-modal__body {
+  height: 100%;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+.tjr-modal__header + .tjr-modal__body {
+  height: calc(100% - 54px);
+}
+
+.tjr-modal__footer {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  @include clearfix;
+  &--border {
+    @extend .tjr-modal__footer;
+    border-top: 1px solid $color-neutral-ash-light;
+  }
+  .tjr-btn{
+    @media only screen and(max-width: $breakpoint-sm){
+      width: 100% !important;
+      display: block;
+    }
+  }
+}

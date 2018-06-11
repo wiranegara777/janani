@@ -1,0 +1,11 @@
+<p>Product Name: <%= @product.name %></p>
+<p>Product Description: <%= @product.description %></p>
+<p>Jira Link: <%= @product.jira %></p>
+<p>Gitab Link: <%= @product.gitlab %></p>
+<p>Project Status:
+<% if @product.status == "true" %>
+        Active
+<% else %>
+        maintenance
+<% end %>
+</p>

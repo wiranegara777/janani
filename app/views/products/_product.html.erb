@@ -1,0 +1,16 @@
+<tr id="product_<%= product.id %>">
+ <td><a data-remote="true" href="/products/<%= product.id %>"><%= product.name %> </a></td>
+ <td>
+ <%=
+    if product.status == "true"
+       "active"
+    else
+       "maintenace"
+    end
+  %>
+</td>
+<td><%= link_to 'Edit', edit_product_path(product), remote: true %></td>
+<td><%= link_to 'Delete', product_path(product),
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %></td>
+</tr>
